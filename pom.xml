@@ -1,0 +1,8 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.atul</groupId>
+  <artifactId>https-multipart-purejava</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>https-multipart-purejava</name>
+  <description>A java client which implements multipart form submit over https and authentication implemented with only jdk classes and no external dependencies</description>
+</project>
