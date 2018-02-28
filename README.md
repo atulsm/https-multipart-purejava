@@ -12,12 +12,12 @@ A java client which implements multipart form submit over https and authenticati
 		String token = "Basic "+ Base64.getEncoder().encodeToString((userName+":"+password).getBytes());
 		
 		MultipartBuilder multipart = new MultipartBuilder(url,token);		
-        multipart.addFormField("entity", "main", "application/json",body);
-        multipart.addFormField("attachment", "subdata1", "application/octet-stream",subdata1);
-        multipart.addFormField("attachment", "subdata2", "application/octet-stream",subdata2);        
-        List<String> response = multipart.finish();         
-        for (String line : response) {
-            System.out.println(line);
-        }
+		multipart.addFormField("entity", "main", "application/json",body);
+		multipart.addFormField("attachment", "subdata1", "application/octet-stream",subdata1);
+		multipart.addFormField("attachment", "subdata2", "application/octet-stream",subdata2);        
+		List<String> response = multipart.finish();         
+		for (String line : response) {
+		    System.out.println(line);
+		}
 	}
 ```
